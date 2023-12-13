@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,4 +19,10 @@ public class ColorButton : MonoBehaviour
     {
         OnButtonClick?.Invoke();
     }
+=======
+using UnityEngine;
+
+public class ColorButton : MonoBehaviour
+{
+>>>>>>> Stashed changes
 }

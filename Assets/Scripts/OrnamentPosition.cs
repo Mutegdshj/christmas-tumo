@@ -13,6 +13,7 @@ public class OrnamentPosition : MonoBehaviour
         }
         set
         {
+<<<<<<< Updated upstream
             _attachedOrnamentData = value;
             Ornament ornamentPrefab = Resources.Load<Ornament>("Ornaments/" + _attachedOrnamentData.prefab);
             _attachedOrnament = Instantiate(ornamentPrefab, this.transform);
@@ -29,3 +30,13 @@ public class OrnamentPosition : MonoBehaviour
         Destroy(_attachedOrnament.gameObject);
     }
 }
+=======
+            _attachedOrnamentName = value;
+            Ornament ornamentPrefab = Resources.Load<Ornament>("Ornaments/" + _attachedOrnamentName);
+            Instantiate(ornamentPrefab, this.transform);
+            Collider collider = GetComponent<Collider>();
+            collider.enabled = false;
+        }
+    }
+}  
+>>>>>>> Stashed changes
